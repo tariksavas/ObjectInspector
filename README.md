@@ -1,5 +1,5 @@
 # Detail
-Allows the camera to rotate, pan, zoom in and out around the object with mouse and touch inputs on cross-platforms.
+Allows the camera to rotate, pan, zoom in and out around the 3D object with mouse and touch inputs on cross-platforms.
 
 ## For Mouse Inputs
 - Rotate -> Drag With Left Mouse Button
