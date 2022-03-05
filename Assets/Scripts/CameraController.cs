@@ -118,22 +118,19 @@ public class CameraController : MonoBehaviour
 
                 #region Pan
 
-                Vector3 tempPos = followObject.position;
                 if (calculatedDeltaX < panTouchesSpace && calculatedDeltaY < panTouchesSpace)
                 {
                     Vector3 newPos = currentCam.transform.right * -Input.touches[0].deltaPosition.x * panSpeed;
                     newPos += currentCam.transform.up * -Input.touches[0].deltaPosition.y * panSpeed;
-                    tempPos += newPos;
-                    desiredPos = tempPos;
+                    desiredPos += newPos;
                 }
 
                 #endregion
 
                 #region Pinch
 
-                tempPos += ray.direction * (zoomRate) * calculatedDeltaZoom / 150;
-                desiredPos = tempPos;
                 firstDistanceBetweenTouchesZoom = distanceBetweenTouches;
+                desiredPos += ray.direction * (zoomRate) * calculatedDeltaZoom / 150;
 
                 #endregion
 
@@ -164,7 +161,6 @@ public class CameraController : MonoBehaviour
 
             Vector3 newPos = currentCam.transform.right * -Input.GetAxis("Mouse X") * panSpeed * 50;
             newPos += currentCam.transform.up * -Input.GetAxis("Mouse Y") * panSpeed * 50;
-
             followObject.position += newPos;
 
             #endregion
@@ -174,8 +170,7 @@ public class CameraController : MonoBehaviour
         {
             #region FreePinch
 
-            Vector3 willBeAddPos = currentCam.transform.forward * zoomRate * Input.GetAxis("Mouse ScrollWheel") * zoomRate * 10;
-            followObject.position += willBeAddPos;
+            followObject.position += currentCam.transform.forward * zoomRate * Input.GetAxis("Mouse ScrollWheel") * zoomRate * 10;
 
             #endregion
         }
