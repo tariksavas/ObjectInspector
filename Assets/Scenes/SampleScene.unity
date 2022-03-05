@@ -193,19 +193,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TOUCH INPUTS
-
-    --
-
-
-    FreeLook -> 1 finger touch
-
-
-    Zoom-in-out
-    -> 2 fingers moving away from each other
-
-
-    Pan -> 2 fingers swipe'
+  m_Text: " TOUCH INPUTS\n--\n\n Rotate -> Drag With 1 Finger\n\n Pan -> Drag With
+    2 Fingers\n\n Zoom-in and out -> Move 2 Fingers Apart"
 --- !u!222 &453617118
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -719,19 +708,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'MOUSE INPUTS
-
-    --
-
-
-    FreeLook -> MouseButton(0)
-
-
-    Zoom-in Zoom-out
-    -> MouseScrollWheel
-
-
-    Pan -> MouseButton(1)'
+  m_Text: " MOUSE INPUTS\n--\n\n Rotate -> Drag With Left Mouse Button\n\n Pan ->
+    Drag With Right Mouse Button\n\n Zoom-in and out -> Scroll The Mouse Wheel"
 --- !u!222 &1729416866
 CanvasRenderer:
   m_ObjectHideFlags: 0
